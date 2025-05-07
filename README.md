@@ -40,6 +40,30 @@ npm install
 
 ## 3. Database
 Go to folder database and open all file in folder and run them
+### ✅ Order of running SQL
+1. skinsite
+2. Brand
+3. SkinType
+4.Ingredient
+5. Category
+6. Size
+7. Benefit
+8. Concern
+9. account_skin
+10. Product
+11. review
+12. Step
+13. routineset
+14. RoutineStep
+15. wishlist
+16. Price
+17. FavBrand
+18. UserConcern
+19. ProductSkinType
+20. IngdInProduct
+21. ConcernInProduct
+22. BenefitInProduct
+23. ProductInBrand
 
 ## 4. User and Privileges
 Open file .env and change the DB_USER & DB_PASSWORD make sure that DB_HOST is localhost
