@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/image/bg.jpeg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: lighten;
+}
+
+.loginBox {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.welcome {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #6f6969;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.input {
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Inria Serif', serif;
+    color: #6f6969;
+    width: 90%;
+}
+
+.input::placeholder {
+    font-weight: 700;
+    color: #D6D6D6;
+}
+
+.signupLink {
+    text-decoration: underline;
+    color: #9D9688;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.signupLink:hover {
+    color: #7C7C7C;
+    transform: scale(1.05);
+}
+
+.loginButton {
+    background-color: #C7BEA7;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: 'Inria Serif', serif;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    width: fit-content;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+    background-color: #A8A59D;
+    transform: scale(1.05);
+}
+
+.error {
+    color: rgb(218, 34, 5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.loginButton:disabled {
+    background-color: #A8A59D;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .loginBox {
+        padding: 25px 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+    }
+
+    .subtext {
+        font-size: 0.9rem;
+    }
+
+    .input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .loginButton {
+        padding: 10px 40px;
+        font-size: 0.95rem;
+    }
+
+    .signupLink {
+        font-size: 0.8rem;
+    }
+}

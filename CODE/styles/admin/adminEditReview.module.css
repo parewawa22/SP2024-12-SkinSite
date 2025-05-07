@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.main {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inria Serif', serif;
+  padding-top: 70px;
+  min-height: 90vh;
+}
+
+.body{
+  display: flex;
+  flex: 1;
+}
+
+.head{
+  margin-bottom: 50px;
+}
+
+.head h2{
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.editReviews{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.sort{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.sort label{
+  margin-right: 8px;
+}
+
+.sort select{
+  padding: 3px;
+}
+
+.ReviewItem{
+  margin-left: 150px;
+  margin-top: 30px;
+  border: black solid 1px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  width: 70%;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.deleteButton button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: medium;
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 0.5px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userDetails h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.userDetails p {
+  margin: 0;
+  color: gray;
+}
+
+.reviewHeader {
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 20px;
+  
+}
+
+.date {
+  color: gray;
+  margin-left: 5px;
+}
+
+.reviewText {
+  margin: 15px 0;
+  line-height: 1.5;
+}

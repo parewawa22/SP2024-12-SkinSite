@@ -1,0 +1,9 @@
+USE skinsite;
+
+INSERT INTO FavBrand (accid, brandid) VALUES 
+	('ACC00001', 'BTH00001'),
+	('ACC00001', 'BTH00008'),
+	('ACC00002', 'BTH00017'),
+	('ACC00002', 'BTH00018'),
+    ('ACC00007', 'BTH00018')
+;

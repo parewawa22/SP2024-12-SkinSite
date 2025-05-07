@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/image/bg.jpeg') no-repeat center center/cover;
+    background-blend-mode: lighten;
+}
+
+.signupBox {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;  
+    width: 100%;
+    height: 500px;  
+    overflow-y: auto; 
+    scrollbar-width: none;  
+    -ms-overflow-style: none;  
+}
+
+.signupBox::-webkit-scrollbar {
+    display: none; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+    width: 94%;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+}
+
+.selectField {
+    background: url('/image/arrow-down.png') no-repeat right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+}
+
+.dropdownContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.inputField,
+.selectField {
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Inria Serif', serif;
+    color: #6f6969;
+    width: 100%;
+    background: white;
+    appearance: none;
+}
+
+.addButton {
+    background-color: #C7BEA7;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #A8A59D;
+}
+
+.signupButton {
+    background-color: #C7BEA7;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.signupButton:hover {
+    background-color: #A8A59D;
+}
+
+.dropdownContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.selectWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.selectField {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Inria Serif', serif;
+    color: #6f6969;
+    background: white;
+    appearance: none;
+}
+
+.searchableDropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding: 5px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.searchableDropdown li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.searchableDropdown li:hover {
+    background-color: #f4f4f4;
+}
+
+.removeButton {
+    background-color: #A8A59D;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+  }
+  
+  .removeButton:hover {
+    background-color: #807c74;
+  }
+  
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      box-sizing: border-box;
+      height: auto;
+      align-items: flex-start; 
+    }
+  
+    .signupBox {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 15px;
+      border-radius: 10px;
+      height: auto;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+  
+    .form {
+      width: 100%;
+      gap: 12px;
+    }
+  
+    .label {
+      font-size: 0.85rem;
+    }
+  
+    .inputField,
+    .selectField {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .signupButton {
+      padding: 10px 30px;
+      font-size: 0.9rem;
+    }
+  
+    .addButton,
+    .removeButton {
+      padding: 6px 12px;
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,310 @@
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex: 1;
+    overflow: auto;
+
+}
+
+.filterSection .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    gap: 10px;
+}
+
+.filterSection .content .column {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.filterSection:hover {
+    overflow-y: auto;
+}
+
+.filterSection::-webkit-scrollbar {
+    display: none; 
+}
+
+.filterSection h3 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+.filterSection .filter {
+    margin-bottom: 16px;
+    padding: 7px;
+    background: #F6F3EB;
+    border: 1px solid #F6F3EB;
+    border-radius: 10px;
+}
+
+.filterSection .filter h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filterSection .filter .content {
+    display: none;
+    margin-top: 10px;
+}
+
+.filterSection .filter .content a:hover {
+    text-decoration: underline;
+}
+
+.filterSection .filter.expanded .content {
+    display: block;
+}
+
+.filterSection .filter h3::after {
+    content: 'โ–ผ';
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.filterSection .filter.expanded h3::after {
+    content: 'โ–ฒ';
+}
+
+.filterSection .filter label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterSection .filter a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    display: block;
+}
+
+.filterSection input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.filterSection input[type="checkbox"]:checked {
+    background-color: #C7BEA7;
+    border: 1px solid #C7BEA7;
+}
+
+.filterSection input[type="text"] {
+    width: 90%;
+    font-family: 'Inria Serif', serif;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.filterSection .dualSlider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.filterSection .dualSlider input[type="range"] {
+    width: 80%;
+}
+
+.filterSection .sliderValues {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.filterSection button {
+    background-color: #C7BEA7;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: 'Inria Serif', serif;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filterSection button:hover {
+    background-color: #A8A59D;
+    transform: scale(1.05);
+}
+
+.resultSection {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.resultSection .topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.resultSection .searchBox {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    overflow-y: auto;
+}
+
+.resultSection .searchBox input {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Inria Serif', serif;
+    color: #6f6969;
+    border: 1px solid #ffffff;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    flex: 1;
+}
+
+.resultSection .searchBox button {
+    padding: 10px;
+    background: #ffffff;
+    border: 2.3px solid #ffffff;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.resultSection .topBar img {
+    height: 14px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.resultSection .filters {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.resultSection .filters span {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #ccc;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.resultSection .filters span button {
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    cursor: pointer;
+    color: red;
+}
+
+.pagination {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.pagination button.disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+
+.productList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productItem {
+    width: 92%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.productItem img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.productInfo {
+    flex: 1;
+}
+
+.productInfo h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.productInfo p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #6f6969;
+}
+
+.productItem .bookmark {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('/image/bookmark.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    outline: none;
+}
+
+.productItem .bookmark.clicked {
+    background: url('/image/clickbookmark.png') no-repeat center center;
+    background-size: contain;
+}
+
+.warningProduct {
+  position: relative;
+}
+
+.warningIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.2em;
+  z-index: 1;
+}

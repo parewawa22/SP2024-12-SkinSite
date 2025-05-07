@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.main {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inria Serif', serif;
+    padding-top: 70px;
+    min-height: 91vh;
+  }
+  
+  .body {
+    display: flex;
+    flex: 1;
+  }
+  
+  .content {
+    width: 100%;
+    color: black;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    overflow-y: auto; 
+    overflow-x: hidden;
+  }
+
+.content h2 {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.review-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.reviewsList {
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+.reviewItem {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: #000000;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    margin-top: 20px;
+}
+
+.reviewItem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.reviewHeader {
+    font-size: 14px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 20px;
+
+}
+
+.date {
+    color: gray;
+    margin-left: 5px;
+}
+
+.reviewDetails p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.reviewItem:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    /* gap: 10px; */
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.reviewItem {
+    position: relative;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.reviewHeaderRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewActions {
+    display: flex;
+    gap: 10px;
+}
+
+.reviewActions {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.reviewActions svg:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.modalContent h2 {
+    margin-top: 0;
+}
+
+.modalContent textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.modalContent select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submitButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #7CB9E8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #5aa1d6;
+}
+
+.sortSelect {
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #90745b;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Inria Serif', serif;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    font-family: 'Inria Serif', serif;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #7CB9E8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+}
+
+.mobileUserBarToggle {
+    display: none;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #90745b
+}
+
+.mobileUserBarToggle button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #90745b;
+    color: white;
+    border: none;
+    font-family: 'Inria Serif', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    .content h2 {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .mobileUserBarToggle {
+        display: block;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        background-color: #90745b;
+    }
+
+    .mobileUserBarToggle button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #90745b;
+        color: white;
+        border: none;
+        font-family: 'Inria Serif', serif;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .reviewsList {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .reviewItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .reviewItem img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .reviewHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+        gap: 4px;
+    }
+
+    .reviewHeaderRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reviewActions {
+        position: static;
+        margin-top: 8px;
+        justify-content: center;
+    }
+
+    .reviewDetails {
+        width: 100%;
+    }
+
+    .reviewDetails h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .stars {
+        justify-content: center;
+        display: flex;
+    }
+
+    .date {
+        text-align: center;
+        color: gray;
+        font-size: 14px;
+    }
+
+    .filter {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .modalContent {
+        width: 70%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+
+}
+
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.reviewSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+

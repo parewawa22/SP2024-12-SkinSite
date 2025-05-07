@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Inria Serif', serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.login img {
+    height: 20px;
+}
+
+.background {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    background: url('/image/bg.jpeg') no-repeat center center/cover;
+    padding: 80px 100px;
+    color: black;
+    
+}
+
+.background h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.background p {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.search-box {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box input {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Inria Serif', serif;
+    color: #6f6969;
+    border: 1px solid #ffffff;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    flex: 1;
+}
+
+.search-box input::placeholder {
+    color: #D6D6D6;
+}
+
+.search-box button {
+    padding: 10px;
+    background: #ffffff;
+    border: 2.3px solid #ffffff;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-box button img {
+    height: 14.55px;
+}
+
+.background a {
+    font-family: 'Inria Serif', serif;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #A8A59D;
+    font-size: 0.9rem;
+    display: block; 
+    text-align: center; 
+}
+
+.background a:link, 
+.background a:visited {
+    color: #A8A59D;
+}
+
+.background a:hover,
+.background a:active {
+    color: #7C7C7C; 
+}   
+
+.middle-section {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.middle-section h2 {
+    font-size: 1.8rem;
+}
+
+.divider {
+    width: 50%;
+    height: 1px;
+    background: #ccc;
+    margin: 20px auto;
+    transition: background 0.3s ease;
+}
+
+.routine {
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.routine:hover {
+    color: #A8A59D;
+}
+
+.routine:hover + .divider {
+    background: #A8A59D; 
+}
+
+.routine span {
+    text-decoration: none;
+}
+
+footer {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    position: relative;
+}
+
+footer .footer-image {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    height: 50px;
+}

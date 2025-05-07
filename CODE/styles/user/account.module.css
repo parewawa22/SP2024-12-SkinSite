@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.main {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inria Serif', serif;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  width: 100%;
+  color: black;
+  /* width: 100%; */
+  height: auto;
+  padding: 20px;
+  margin-right: 60px;
+  margin-bottom: 50px;
+}
+
+.content h2 {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.profile {
+  justify-items: center;
+  margin-left: 10px;
+}
+
+.squareProfile {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 50px;
+  width: 40%;
+  position: relative;
+}
+
+.circlePosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleProfile {
+  background-color: #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -90px;
+  z-index: 2;
+}
+
+.infoUser {
+  text-align: center;
+}
+
+.squareSkinProfile {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background: #fff;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.squareSkinProfile h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.showProfile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.showProfile h4 {
+  width: 79%;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.result h5 {
+  display: flex;
+  border-style: solid;
+  width: 30%;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-color: #90745b;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: #90745b;
+  
+}
+
+.result button {
+  display: flex;
+  border-style: dotted;
+  width: 30%;
+  height: 45px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-color: #90745b;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: #90745b;
+}
+
+.editBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.editButton {
+  background-color: #90745b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #6e5945;
+}
+
+.result .add {
+  display: flex;
+  border-style: dotted;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border-color: #90745b;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: #90745b;
+}
+
+.add:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: #eee2d8;
+}
+
+.clickableTag {
+  display: inline-flex;
+  align-items: center;
+  border-style: solid;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border-color: #90745b;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: #90745b;
+  margin-right: 8px;
+  cursor: default;
+}
+
+.deleteX {
+  margin-left: 6px;
+  color: #c0392b;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.deleteX:hover {
+  color: #e74c3c;
+}
+
+.editX {
+  margin-left: 6px;
+  color: #5a5a5a;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.editX:hover {
+  color: #7a7a7a;
+}
+
+.mobileUserBarToggle {
+  display: none;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #90745b
+}
+
+.mobileUserBarToggle button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #90745b;
+  color: white;
+  border: none;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h2 {
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+
+  .editBtnWrapper {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .squareProfile,
+  .squareSkinProfile {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .circleProfile {
+    width: 80px;
+    height: 80px;
+    margin-top: -60px;
+  }
+
+  .circleProfile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .infoUser h3,
+  .infoUser h5 {
+    font-size: 14px;
+  }
+
+  .squareSkinProfile h2 {
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .showProfile {
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: 1fr;
+  }
+
+  .showProfile h4 {
+    text-align: left;
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .result h5 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .result h5,
+  .result button {
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .result .add {
+    width: 40px;
+    height: 40px;
+  }
+
+  .editButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .mobileUserBarToggle {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #90745b;
+  }
+
+  .mobileUserBarToggle button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #90745b;
+    color: white;
+    border: none;
+    font-family: 'Inria Serif', serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

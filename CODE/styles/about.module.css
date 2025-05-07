@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.main {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inria Serif', serif;
+  padding-top: 70px;
+  min-height: 91vh;
+}
+
+.content {
+  width: 100%;
+  color: black;
+  height: auto;
+  padding: 20px;
+  margin-right: 0;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.pageTitle {
+  color: #1E3932;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: 'Inria Serif';
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.pageTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #90745B;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.missionBox {
+  background-color: white;
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.4s ease;
+  margin-bottom: 5rem;
+}
+
+.missionBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(144, 116, 91, 0.15);
+}
+
+.missionTitle {
+  color: #1E3932;
+  margin-bottom: 2rem;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inria Serif';
+  letter-spacing: 0.5px;
+}
+
+.missionText {
+  color: #444444;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: normal;
+  font-family: 'Inria Serif';
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Grid Layout and Spacing */
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 4rem 0;
+}
+
+.mainFeatures {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+/* Feature Card Styling */
+.featureCard {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px);
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #90745B, #BE9B7B);
+}
+
+/* Image Enhancement */
+.featureImage {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto 1rem;
+  transition: transform 0.4s ease;
+  object-fit: contain;
+}
+
+.featureCard:hover .featureImage {
+  transform: scale(1.05);
+}
+
+.hazard{
+  width: 800px;
+  height: 170px;
+  margin: 2rem auto 1rem;
+}
+
+/* Topic Title Styling */
+.featureTitle {
+  color: #1E3932;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Inria Serif';
+  letter-spacing: 0.5px;
+}
+
+.featureTitle {
+  margin-bottom: 0px;
+}
+
+/* Topic Content Styling */
+.featureText {
+  color: #444444;
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: 'Inria Serif';
+  flex-grow: 1;
+}
+
+.featureText p {
+  margin-bottom: 2rem;
+}
+
+/* List Styling */
+.featureText ul {
+  margin: 1.5rem 0;
+  padding-left: 1.8rem;
+}
+
+.featureText li {
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-left: 0.8rem;
+  line-height: 1.6;
+}
+
+.featureText li::before {
+  content: '•';
+  color: #90745B;
+  position: absolute;
+  left: -1rem;
+  font-size: 1.2em;
+}
+
+.featureText section {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featureText section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.featureText h4 {
+  color: #1E3932;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-family: 'Inria Serif';
+}
+
+.featureText p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.featureText ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.featureText li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.featureText li:before {
+  content: "•";
+  color: #90745B;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.featureText strong {
+  color: #1E3932;
+  font-weight: 600;
+}
+
+.hazardList li, .dataList li {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.hazardList .safe {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+}
+
+.hazardList .moderate {
+  background-color: #FFF3E0;
+  color: #EF6C00;
+}
+
+.hazardList .high {
+  background-color: #FFEBEE;
+  color: #C62828;
+}
+
+.dataList li {
+  background-color: #F5F5F5;
+  border-left: 4px solid #90745B;
+}
+
+.teamSection {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(144, 116, 91, 0.1);
+  margin-top: 2rem;
+}
+
+.teamTitle {
+  color: #90745B;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Inria Serif';
+}
+
+.teamText {
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: normal;
+  font-family: 'Inria Serif';
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .featureImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .pageTitle {
+    font-size: 36px;
+  }
+
+  .largeImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featureImage {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 20px;
+  }
+
+  .missionBox {
+    padding: 2.5rem;
+  }
+
+  .missionTitle {
+    font-size: 28px;
+  }
+
+  .missionText {
+    font-size: 18px;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureCard {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .featureTitle {
+    font-size: 24px;
+  }
+
+  .featureImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .largeImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .featureText {
+    font-size: 16px;
+  }
+
+  .featureText h4 {
+    font-size: 20px;
+  }
+
+  .featureText p {
+    font-size: 15px;
+  }
+
+  .featureText section {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.main {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  font-family: 'Inria Serif', serif;
+}
+
+.body {
+  min-height: auto;
+  display: flex;
+}
+
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.MenuSection ul {
+  padding-left: 0px;
+  margin-top: 0px;
+  font-size: 0.98rem;
+  align-items: center;
+  list-style: none;
+  display: grid;
+  gap: 10px 5px;
+  grid-template-columns: 32px auto;
+}
+
+.MenuSection ul li {
+  margin: 20px 0px 0px 0px;
+}
+
+.textArrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.textArrow a {
+  display: flex;
+  align-items: center;
+}
+
+.textArrow a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.textArrow img {
+  margin-left: 5px;
+}
+
+.MenuSection .textArrow a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.Account {
+  width: 100%;
+  margin-bottom: 60px;
+  color: black
+}
+
+.Account h2 {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.EditProfile .text {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.edit {
+  margin-left: 150px;
+  align-items: center;
+}
+
+.editUserContainer {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px 30px 40px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: 70%;
+}
+
+.editUser {
+  display: grid;
+  gap: 5px 5px;
+  grid-template-columns: 150px auto;
+}
+
+.editUser label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.inputName {
+  align-content: center;
+}
+
+.editUser input {
+  font-family: 'Inria Serif', serif;
+  font-size: 15px;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  border-color: #000000;
+  border-style: solid;
+  text-align: center;
+  border-width: 1px;
+  color: #90745b;
+}
+
+.editUser select {
+  font-size: 15px;
+  font-family: 'Inria Serif', serif;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  border-style: solid;
+  align-items: center;
+  border-radius: 20px;
+  border-color: #000000;
+  border-width: 1px;
+  background-color: #ffffff;
+  color: #90745b;
+}
+
+.inputGender button:hover {
+  text-decoration: underline;
+  background-color: #90745b;
+  color: #ffffff;
+}
+
+.skinProfile {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  background: #fff;
+  border-radius: 50px;
+  width: 70%;
+}
+
+.skinProfile h2 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.editSkin {
+  display: grid;
+  gap: 5px 5px;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 70px 70px;
+  align-items: center;
+}
+
+.select {
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.select .add {
+  display: flex;
+  border-style: dotted;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-color: #90745b;
+  border-width: 2px;
+  background-color: #ffffff;
+  color: #90745b;
+}
+
+.add:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: #eee2d8;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.actionButton {
+  padding: 10px 25px;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  min-width: 160px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.updateButton {
+  background-color: #7CB9E8;
+  color: white;
+}
+
+.updateButton:hover {
+  background-color: #5aa1d6;
+}
+
+.deleteButton {
+  background-color: #EB4848;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #ba3939;
+}
+
+.tag {
+  border: 1px solid #90745b;
+  border-radius: 20px;
+  padding: 6px 12px;
+  background: white;
+  color: #90745b;
+  font-size: 14px;
+}
+
+.deleteButtonSmall {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: #EB4848;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.deleteButtonSmall:hover {
+  color: #ba3939;
+}
+
+.mobileUserBarToggle {
+  display: none;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #90745b
+}
+
+.mobileUserBarToggle button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #90745b;
+  color: white;
+  border: none;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h2 {
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+
+  .mobileUserBarToggle {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #90745b;
+  }
+
+  .mobileUserBarToggle button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #90745b;
+    color: white;
+    border: none;
+    font-family: 'Inria Serif', serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .edit {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .editUser {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column; 
+    padding: 30px 20px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+
+  .editUser label {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .editUser input,
+  .editUser select {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .actionButton {
+    min-width: 100%;
+  }
+}

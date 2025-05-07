@@ -1,0 +1,153 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.inputBox {
+    font-family: 'Inria Serif', serif;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.dropdown {
+    overflow-y: auto;
+    margin-top: 5px;
+    padding: 0;
+    max-height: 150px;
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dropdown li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #eee;
+}
+
+.modalButton {
+    font-family: 'Inria Serif', serif;
+    font-weight: normal;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.saveButton {
+    background-color: #7CB9E8;
+}
+
+.saveButton:hover {
+    background-color: #5aa1d6;
+}
+
+.cancelButton {
+    background-color: #EB4848;
+}
+
+.cancelButton:hover {
+    background-color: #ba3939;
+}
+
+.titleWithInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.infoWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipBox {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    z-index: 1000;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Inria Serif', serif;
+}
+
+.tooltipTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.infoWrapper:hover .tooltipBox {
+    display: block;
+}
+
+.optionGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.optionGrid span {
+    background-color: #f5f5f5;
+    padding: 4px 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+}
+

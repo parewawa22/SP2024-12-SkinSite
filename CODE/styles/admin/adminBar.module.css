@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.SideBar {
+  width: 280px;
+  max-width: 100%;
+  background: #fff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+}
+
+.MenuSection ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.MenuSection ul li {
+  margin: 0;
+  width: 100%;
+}
+
+.textArrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.textArrow a {
+  display: flex;
+  align-items: center;
+}
+
+.textArrow a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.textArrow img {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .SideBar {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.6s ease, opacity 0.4s ease, padding 0.3s ease;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #eee;
+  }
+
+  .SideBar:has(.MenuSection) {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .MenuSection {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .MenuSection ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+
+  .MenuSection ul li {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  gap: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.menuText {
+  flex-grow: 1;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menuArrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+  .menuItem {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .menuIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menuText {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  .menuArrow {
+    width: 14px;
+    height: 14px;
+  }
+
+}

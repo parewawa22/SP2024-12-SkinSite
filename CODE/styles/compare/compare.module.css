@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.container {
+    font-family: 'Inria Serif', serif;
+    background: url("/image/Backgroud1.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    padding-top: 120px;
+    padding-bottom: 100px; 
+    flex: 1; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ABA49E;
+}
+
+.box {
+    position: relative;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 55px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #D6D6D6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.searchBox input {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Inria Serif', serif;
+    border: none;
+    outline: none;
+    flex: 1;
+    color: #6f6969;
+}
+
+.searchBox button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    padding: 13px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox button img {
+    height: 15px;
+}
+
+.searchDropdown {
+    position: absolute;
+    width: 90%;
+    background: white;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.searchDropdown li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.searchDropdown li:hover {
+    background-color: #f4f4f4;
+}
+
+.searchBox button img {
+    height: 14.55px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.listProducts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    margin: 0 auto;
+    flex-wrap: nowrap; 
+}
+
+.productBox {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 15px;
+    border: 2px dashed #D6D6D6;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    color: #6f6969;
+    text-align: center;
+    overflow-wrap: break-word;
+    position: relative;
+    margin: 10px;
+}
+
+.productBox.hasProduct {
+    border: 2px solid #C7BEA7;
+    color: black;
+}
+
+.productBox:hover {
+    background-color: #f5f3f3;
+    color: rgb(158, 158, 158);
+}
+
+.productContent {
+    align-items: center;
+    gap: 15px;
+}
+
+.warningIcon {
+    color: #ff4444;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.info{
+    display: flex ;
+    flex-direction: column ;
+    justify-content:space-between;
+}
+
+.name{
+    font-size: medium;
+}
+
+.brand{
+    margin-top: 15px;
+}
+
+.removeButton {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+.removeButton:hover {
+    color: red;
+}
+
+.selectionInfo {
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 1rem;
+    color: #6f6969;
+    font-weight: bold;
+    text-align: center;
+}
+
+.compareButton {
+    font-family: 'Inria Serif', serif;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 60px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #C7BEA7;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 40px;
+}
+
+.compareButton:hover {
+    background-color: #A8A59D;
+    transform: scale(1.05);
+}
+
+.compareButton:disabled {
+    background-color: #d3d3d3;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.footer {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.footerImage {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    height: 50px;
+}
+
+.compareContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.searchSection {
+    position: relative;
+    margin: 20px 0;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdownItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #f5f5f5;
+}
+
+.compareGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.productCard {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+
+.removeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.productPrice {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.productBrand {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.backButton {
+    position: absolute;
+    left: 2rem;
+    top: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.backButton img {
+    width: 24px;
+    height: 24px;
+}
+
+.backButton span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.backButton:hover {
+    transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-top: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .searchDropdown {
+        width: 100% !important;
+        left: 0;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 16px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+    }
+
+    .searchBox {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .searchBox input {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .listProducts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productBox {
+        width: 90% !important;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .compareButton {
+        width: 80%;
+        max-width: 280px;
+        font-size: 0.95rem;
+        padding: 10px 0;
+        margin: 20px auto 40px auto;
+    }
+
+    .backButton {
+        top: 4rem;
+        left: 1rem;
+    }
+}

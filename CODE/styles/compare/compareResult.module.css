@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+.container {
+    font-family: 'Inria Serif', serif;
+    background: url("/image/Backgroud1.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.main h1{
+   display: flex;
+   justify-content: center;
+   margin-top: 120px; 
+   font-size: 1.7rem;
+}
+
+.comparisonTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comparisonTable table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.comparisonTable th,
+.comparisonTable td {
+    padding: 15px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.productHeader {
+    text-align: center;
+}
+
+.productHeader img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.productHeader h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.featureLabel {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    width: 120px;
+}
+
+.noProducts {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .comparisonTable {
+        margin: 10px -15px;
+    }
+}
+
+.productCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.warningSection {
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none; 
+    color: #c00303;
+}
+
+.allergyItem {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 5px;
+    background-color: #ffe6e6;  
+    border: 1px solid #ffcccc;  
+    border-radius: 4px;
+    font-size: 0.9em;
+    position: relative;  
+}
+
+.productImage {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.productInfo {
+    padding: 20px;
+}
+
+.productName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.brandName {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.scoreSection {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scoreInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.scoreNumber {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.scoreNumber:empty::before {
+    content: 'No score';
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.grade {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.grade:empty::before {
+    content: '-';
+    color: #666;
+}
+
+.darkGreen {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.lightGreen {
+    background-color: #689F38;
+    color: white;
+}
+
+.yellow {
+    background-color: #FBC02D;
+    color: #000;
+}
+
+.orange {
+    background-color: #F57C00;
+    color: white;
+}
+
+.red {
+    background-color: #D32F2F;
+    color: white;
+}
+
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.detailRow {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detailLabel {
+    min-width: 120px;
+    font-weight: 500;
+    color: #666;
+}
+
+.detailValue {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.detailValue span {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.categoryItem {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 2px;
+  }
+
+.highlighted {
+    color: #006400;  
+    font-weight: bold;
+    background-color: rgba(0, 128, 0, 0.1);
+    padding: 0 2px;
+    border-radius: 2px;
+    position: relative;  
+  }
+
+.ingredientSection {
+    margin-top: 20px;
+}
+
+.ingredientsList {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    max-height: 100px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.allergenHighlighted {
+    color: #ff0000;  
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.1); 
+    padding: 0 2px;
+    border-radius: 2px;
+    position: relative;  
+  }
+
+.ingredientItem {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.recommendationSection {
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.recommendationSection h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.scrollWrapper {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.recommendationContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    gap: 1rem;
+}
+
+.recommendationContainer::-webkit-scrollbar {
+    display: none; 
+}
+
+.recommendationCard {
+    flex: 0 0 200px;
+    max-width: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.recommendationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recommendationImage {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.scrollButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.scrollButton:hover {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.leftButton {
+    left: 0;
+}
+
+.rightButton {
+    right: 0;
+}
+
+.recommendationGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.recommendationBrand {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 4px 0;
+}
+
+.recommendationName {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recommendationInfo {
+    padding: 12px;
+    margin-top: 0.5rem;
+}
+
+.recommendationInfo h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 4px 0;
+}
+
+.recommendationInfo p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
