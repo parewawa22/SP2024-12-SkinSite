@@ -1,4 +1,4 @@
-# 💧 SP2024-12 SkinSite
+# SP2024-12 SkinSite
 
 **SkinSite** is a skincare web application designed to promote Thai facial skincare products. It features ingredient transparency, EWG-based safety scores, product comparisons, smart search, personalized routines, and admin controls.
 
@@ -6,13 +6,13 @@
 
 ## 🌐 Overview
 
-Despite the growing skincare market in Thailand, many local products lack visibility and detailed online representation. SkinSite solves this by offering:
+The skincare industry in Thailand is growing, yet many products lack visibility and detailed information on existing platforms. SkinSite fills this gap by providing the following:
 
-- 🌿 Detailed product & ingredient profiles
-- 🚨 Safety alerts based on skin concerns
+- 🌿 Detailed product & ingredient information
+- 🚨 Safety scores and personalized alerts based on skin concerns
 - 🔍 Smart search with filters (brand, skin type, concern)
 - 🧴 Product comparison (up to 3 items)
-- 🧑‍💻 Personalized skincare routine builder
+- 🧑‍💻 Personalized skincare routine creation
 - 🛠️ Admin dashboard for managing content
 
 ---
@@ -110,7 +110,7 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 - 🔍 **Smart Search** with filters
 - 📊 **Score system** based on EWG safety data
 - ⚖️ **Comparison tool** for side-by-side product viewing
-- ❤️ **Wishlist** & routine creation
+- ❤️ **Wishlist** & **Routine** creation
 - 📋 **Ingredient & concern alerts**
 - 🧑‍⚕️ **Admin interface** for managing products and reviews
 
@@ -129,7 +129,7 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 - Highlight SME (small/medium) Thai skincare brands
 - Mobile-first UI/UX design
 - Ingredient-based product recommendations
-- Improve personalization with AI/ML features
+- Implement more features for improved function and superior user experience
 
 ---
 
@@ -143,7 +143,3 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 Faculty of ICT, Mahidol University
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
