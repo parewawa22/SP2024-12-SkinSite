@@ -41,7 +41,7 @@ CODE/
 
 ```bash
 git clone https://github.com/yourusername/skinsite.git
-cd skinsite/CODE
+cd CODE
 ```
 
 ### 2️⃣ Install Dependencies
