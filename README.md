@@ -38,8 +38,10 @@ CODE/
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
+Create a folder to clone the project and open **powershell** to go to that folder and follow these steps.
 
 ```bash
+cd YOUR_PATH_FLODER
 git clone https://github.com/yourusername/skinsite.git
 cd CODE
 ```
