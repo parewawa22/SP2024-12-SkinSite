@@ -42,7 +42,7 @@ Create a folder to clone the project and open **powershell** to go to that folde
 
 ```bash
 cd YOUR_PATH_FLODER
-git clone https://github.com/yourusername/skinsite.git
+git clone https://github.com/yourusername/SP2024-12-SkinSite.git
 ```
 
 ### 2️⃣ Install Dependencies
