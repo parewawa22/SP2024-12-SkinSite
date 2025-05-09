@@ -43,12 +43,12 @@ Create a folder to clone the project and open **powershell** to go to that folde
 ```bash
 cd YOUR_PATH_FLODER
 git clone https://github.com/yourusername/skinsite.git
-cd CODE
 ```
 
 ### 2️⃣ Install Dependencies
 
 ```bash
+cd CODE
 npm install react react-dom next
 npm install
 ```
